@@ -21,7 +21,7 @@ listen()
   const userSignOut = () => {
     signOut(auth)
       .then(() => {
-        navigate("/login");
+        navigate("/");
       })
       .catch((err) => console.log(err));
   };
