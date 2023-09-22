@@ -11,12 +11,12 @@ export default function Login() {
     const logIn=(e)=>{
         e.preventDefault()
         signInWithEmailAndPassword(auth,email,password)
-        .then(()=> navigate("/Image-Gallery/home"))
+        .then(()=> navigate("/home"))
         .catch((err)=>alert("invalid username and password\n\nCreate and account to continue"))
     }
   return (
   
-      <div className="flex flex-col h-screen items-center text-black justify-center log-in-container bg-slate-50">
+      <div className="flex flex-col h-screen items-centerg text-black justify-center log-in-container bg-slate-50">
            <h2 className='text-3xl font-bold mb-3'>Log In</h2>
         <form onSubmit={logIn} className="text-center space-y-5" >
           <div>
@@ -46,7 +46,7 @@ export default function Login() {
             />
           </div>
           <div><button type="submit" className="bg-green-600 text-white w-72 h-9 rounded-md" >Log In</button></div>
-          <div><p>Dont have an account? <a  href="" className="text-blue-500"   onClick={()=>navigate(`/Image-Gallery/signUp`)} >signUp</a></p></div>
+          <div><p>Dont have an account? <a  href="" className="text-blue-500"   onClick={()=>navigate(`/signUp`)} >signUp</a></p></div>
         </form>
        
       </div>
