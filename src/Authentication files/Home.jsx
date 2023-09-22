@@ -21,7 +21,7 @@ listen()
   const userSignOut = () => {
     signOut(auth)
       .then(() => {
-        navigate("/");
+        navigate("/Image-Gallery");
       })
       .catch((err) => console.log(err));
   };
