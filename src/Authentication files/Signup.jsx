@@ -48,7 +48,7 @@ const Signup = () => {
             />
           </div>
           <div><button type="submit" className="bg-green-600 text-white w-72 h-9 rounded-md" >Sign Up</button></div>
-          <div><p>Dont have an account? <a href="" className="text-blue-500"   onClick={()=>navigate(`/Image-Gallery`)}>signIn</a></p></div>
+          <div><p>Dont have an account? <a href="" className="text-blue-500"   onClick={()=>navigate(`/Image-Gallery/`)}>signIn</a></p></div>
 
         </form>
       </div>

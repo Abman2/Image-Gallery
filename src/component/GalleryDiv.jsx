@@ -7,7 +7,7 @@ export const GalleryDiv = () => {
   const { authuser, userSignOut } = AuthDetails();
   return (
     <>
-      {authuser ? (
+      {authuser ? 
         <>
           <header className="h-screen bg-black   ">
             <nav className="top-0 h-12 flex items-center justify-between  sm:max-w-6xl mx-auto max-w-md ">
@@ -37,9 +37,9 @@ export const GalleryDiv = () => {
             </div>
           </header>
         </>
-      ) : (
+       : 
         alert("invalid sign in")
-      )}
+      }
      
       <DragAndDropSection/>
       <div>
