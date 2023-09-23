@@ -18,8 +18,8 @@ export function SortableItem(props) {
     {...attributes}
     {...listeners}
     {...isDragging}
-      className=" mx-auto bg-green-400 rounded-md inline h hover:scale-105">
-      <img src={props.id} alt="" className=" rounded-md h-80 sm:w-60 w-80 sm:h-60 border    " ref={setNodeRef}
+      className=" mx-auto bg-black rounded-md inline h hover:scale-105">
+      <img src={props.id} alt="" className=" rounded-md h-80 sm:w-64 w-80 sm:h-64 border-2 border-black    " ref={setNodeRef}
      />
    
     </div>

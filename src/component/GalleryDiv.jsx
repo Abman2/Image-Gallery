@@ -7,7 +7,7 @@ export const GalleryDiv = () => {
   const { authuser, userSignOut } = AuthDetails();
   return (
     <>
-      {authuser ? 
+      {authuser ? (
         <>
           <header className="h-screen bg-black   ">
             <nav className="top-0 h-12 flex items-center justify-between  sm:max-w-6xl mx-auto max-w-sm sticky  ">
@@ -20,7 +20,6 @@ export const GalleryDiv = () => {
                   placeholder="Search>>>>"
                   className="bg-transparent border border-white w-80 rounded-md py-0.5  px-3 "
                 />
-               
               </div>
 
               <div>
@@ -32,19 +31,19 @@ export const GalleryDiv = () => {
               </div>
             </nav>
             <div className="mx-auto flex flex-col items-center justify-center h-5/6 text-center">
-              <h1 className="text-7xl text-green-700 font-extrabold ">Welcome to Gallery</h1>
+              <h1 className="text-8xl text-green-700 font-extrabold ">Welcome to Gallery</h1>
               <i className="text-white">Home of your favourite pictures</i>
             </div>
           </header>
+          <DragAndDropSection />
+
+      <Footer />
         </>
-       : 
+      ) : (
         alert("invalid sign in")
-      }
-     
-      <DragAndDropSection/>
-      <div>
-<Footer/>
-      </div>
+      )}
+
+      
     </>
   );
 };

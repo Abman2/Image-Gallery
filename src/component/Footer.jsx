@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className=" text-green-800 items-center container text-center bg-slate-50 bottom-0 pt-14 h-44 flex flex-col space-y-5 ">
+    <footer className=" text-green-700 items-center container text-center justify-center bg-black  max-w-full  bottom-0 pt-14 h-40 flex flex-col space-y-5 ">
       <ul className="flex space-x-5 font-semibold ">
         <li>Condition of use</li>
         <li>Privacy & Policy</li>

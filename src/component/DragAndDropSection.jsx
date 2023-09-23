@@ -31,10 +31,10 @@ export const DragAndDropSection = () => {
   return (
     <div className="overflow-hidden bg-green-400 py-10 ">
       <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-        <h1 className="text-center md:text-7xl text-2xl my-3 font-extrabold text-green-700">
+        <h1 className="text-center md:text-6xl text-2xl my-3 font-extrabold text-green-800 overflow-hidden">
           Gallery Section
         </h1>
-        <div className="grid md:grid-cols-4 pt-5 grid-cols-1 sm:grid-cols-2  sm:max-w-6xl max-w-md mx-auto gap-x-5 gap-y-5">
+        <div className="grid md:grid-cols-4 pt-5 grid-cols-1 sm:grid-cols-2  sm:max-w-6xl max-w-md mx-auto gap-x-5 gap-y-5 overflow-hidden">
           <SortableContext items={images} strategy={rectSortingStrategy} >  
             {images.map((image,index) => (
               <SortableItem key={index} id={image} />
