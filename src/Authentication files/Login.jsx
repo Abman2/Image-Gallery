@@ -11,7 +11,7 @@ export default function Login() {
     const logIn=(e)=>{
         e.preventDefault()
         signInWithEmailAndPassword(auth,email,password)
-        .then(()=> navigate("/home"))
+        .then(()=> navigate("/Image-Gallery/home"))
         .catch((err)=>alert("invalid username and password\n\nCreate and account to continue"))
     }
   return (
