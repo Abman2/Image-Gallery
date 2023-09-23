@@ -10,7 +10,7 @@ export const GalleryDiv = () => {
       {authuser ? 
         <>
           <header className="h-screen bg-black   ">
-            <nav className="top-0 h-12 flex items-center justify-between  sm:max-w-6xl sm:mx-auto max-w-sm mx-2 ">
+            <nav className="top-0 h-12 flex items-center justify-between  sm:max-w-6xl mx-auto max-w-sm sticky  ">
               <h1 className="text-xl font-medium text-white">{authuser.email}</h1>
               <div className=" sm:inline hidden">
                 <input
