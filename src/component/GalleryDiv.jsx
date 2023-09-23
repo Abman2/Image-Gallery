@@ -9,7 +9,7 @@ export const GalleryDiv = () => {
     <>
       {authuser ? (
         <>
-          <header className="h-screen bg-black   ">
+          <header className="h-96 sm:h-screen bg-black   ">
             <nav className="top-0 h-12 flex items-center justify-between  sm:max-w-6xl mx-auto max-w-sm sticky  ">
               <h1 className="text-xl font-medium text-white">{authuser.email}</h1>
               <div className=" sm:inline hidden">
@@ -31,7 +31,7 @@ export const GalleryDiv = () => {
               </div>
             </nav>
             <div className="mx-auto flex flex-col items-center justify-center h-5/6 text-center">
-              <h1 className="text-8xl text-green-700 font-extrabold ">Welcome to Gallery</h1>
+              <h1 className="text-6xl sm:text-7xl text-green-700 font-extrabold ">Welcome to Gallery</h1>
               <i className="text-white">Home of your favourite pictures</i>
             </div>
           </header>
